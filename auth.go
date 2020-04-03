@@ -13,8 +13,8 @@ import (
 )
 
 type ClientAuthRequest struct {
-	Transport http.RoundTripper
-	Dial      func(network, addr string) (net.Conn, error)
+	transport http.RoundTripper
+	dial      func(network, addr string) (net.Conn, error)
 }
 
 func (c *ClientAuthRequest) Transport(endpoint *Endpoint) error {
@@ -33,7 +33,8 @@ func (c *ClientAuthRequest) Transport(endpoint *Endpoint) error {
 	}
 
 	transport := &http.Transport{
-		Proxy: http.ProxyFromEnvironment,
+		IdleConnTimeout: 10 * time.Second,
+		Proxy:           http.ProxyFromEnvironment,
 		TLSClientConfig: &tls.Config{
 			InsecureSkipVerify: endpoint.Insecure,
 			Certificates:       []tls.Certificate{cert},
