@@ -13,8 +13,8 @@ import (
 )
 
 type ClientAuthRequest struct {
-	transport http.RoundTripper
-	dial      func(network, addr string) (net.Conn, error)
+	Transport http.RoundTripper
+	Dial      func(network, addr string) (net.Conn, error)
 }
 
 func (c *ClientAuthRequest) Transport(endpoint *Endpoint) error {
