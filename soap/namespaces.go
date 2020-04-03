@@ -2,7 +2,7 @@ package soap
 
 import (
 	"github.com/ChrisTrenkamp/goxpath"
-	"github.com/masterzen/simplexml/dom"
+	"github.com/oneNutW0nder/simplexml/dom"
 )
 
 // Namespaces

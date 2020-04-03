@@ -7,7 +7,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/masterzen/winrm/soap"
+	"github.com/oneNutW0nder/winrm/soap"
 )
 
 // Client struct
