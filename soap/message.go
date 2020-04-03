@@ -1,7 +1,7 @@
 package soap
 
 import (
-	"github.com/oneNutW0nder/simplexml/dom"
+	"github.com/masterzen/simplexml/dom"
 )
 
 type SoapMessage struct {

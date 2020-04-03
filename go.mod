@@ -7,7 +7,7 @@ require (
 	github.com/ChrisTrenkamp/goxpath v0.0.0-20170922090931-c385f95c6022
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/kr/pretty v0.1.0 // indirect
-	github.com/oneNutW0nder/simplexml v0.0.0-20160608183007-4572e39b1ab9
+	github.com/masterzen/simplexml v0.0.0-20160608183007-4572e39b1ab9
 	golang.org/x/crypto v0.0.0-20190222235706-ffb98f73852f // indirect
 	golang.org/x/net v0.0.0-20190213061140-3a22650c66bd // indirect
 	golang.org/x/text v0.3.0 // indirect

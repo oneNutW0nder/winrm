@@ -3,7 +3,7 @@ package soap
 import (
 	"testing"
 
-	"github.com/oneNutW0nder/simplexml/dom"
+	"github.com/masterzen/simplexml/dom"
 	. "gopkg.in/check.v1"
 )
 
